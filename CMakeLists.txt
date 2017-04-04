@@ -10,12 +10,15 @@ add_executable(cpp-lib-version
 )
 
 include_directories(
+    lib/fuga/include
     lib/hoge/include
 )
 
+add_subdirectory(lib/fuga)
 add_subdirectory(lib/hoge)
 
 target_link_libraries(cpp-lib-version
+    fuga
     hoge
 )
 

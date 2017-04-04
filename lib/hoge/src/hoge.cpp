@@ -19,3 +19,7 @@ int Hoge::i() { return i_; }
 double Hoge::d() { return d_; }
 
 }  // namespace hoge
+
+#undef STRINGIFY_HELPER
+#undef VERSION_STRINGIFY
+#undef VERSION_STRING
