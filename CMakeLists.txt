@@ -12,14 +12,17 @@ add_executable(cpp-lib-version
 include_directories(
     lib/fuga/include
     lib/hoge/include
+    lib/piyo/include
 )
 
 add_subdirectory(lib/fuga)
 add_subdirectory(lib/hoge)
+add_subdirectory(lib/piyo)
 
 target_link_libraries(cpp-lib-version
     fuga
     hoge
+    piyo
 )
 
 target_compile_options(cpp-lib-version PRIVATE
