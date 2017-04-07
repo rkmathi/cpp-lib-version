@@ -26,7 +26,8 @@ target_link_libraries(cpp-lib-version
 )
 
 target_compile_options(cpp-lib-version PRIVATE
-    -std=c++14
     -Wall
-    -Wextra
+    -Werror
 )
+
+set_property(TARGET cpp-lib-version PROPERTY CXX_STANDARD 14)

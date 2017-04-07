@@ -5,3 +5,4 @@ project(fuga CXX)
 add_library(fuga STATIC
     src/fuga.cpp
 )
+set_property(TARGET fuga PROPERTY CXX_STANDARD 11)

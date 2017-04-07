@@ -5,6 +5,15 @@
 #include "piyo.h"
 
 int main(void) {
+  // check c++11 feature is enabled.
+  auto cpp11 = 11;
+  std::cout << cpp11 << "\n";
+
+  // check c++14 feature is enabled.
+  auto cpp14 = [](auto x, auto y) {return x + y;};
+  std::cout << cpp14(11, 3) << "\n";
+
+
   std::cout << "fuga::Fuga::version():" << fuga::Fuga::version() << "\n";
   fuga::Fuga f;
   std::cout << "f.i:" << f.i() << ":"

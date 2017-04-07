@@ -5,3 +5,4 @@ project(piyo C)
 add_library(piyo STATIC
     src/piyo.c
 )
+set_property(TARGET piyo PROPERTY C_STANDARD 99)

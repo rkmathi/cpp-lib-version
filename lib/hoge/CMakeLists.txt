@@ -5,3 +5,4 @@ project(hoge CXX)
 add_library(hoge STATIC
     src/hoge.cpp
 )
+set_property(TARGET hoge PROPERTY CXX_STANDARD 98)
