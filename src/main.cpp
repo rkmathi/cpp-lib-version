@@ -10,7 +10,7 @@ int main(void) {
   std::cout << cpp11 << "\n";
 
   // check c++14 feature is enabled.
-  auto cpp14 = [](auto x, auto y) {return x + y;};
+  auto cpp14 = [](auto x, auto y) { return x + y; };
   std::cout << cpp14(11, 3) << "\n";
 
   // c++11 library
